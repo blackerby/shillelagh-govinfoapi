@@ -1,0 +1,17 @@
+{
+    "count": 35,
+    "message": null,
+    "nextPage": "https://api.govinfo.gov/collections/BILLS/2023-02-28T20:18:10Z/2023-03-01T20:18:10Z?offset=1&pageSize=1",
+    "previousPage": null,
+    "packages": [
+        {
+            "packageId": "BILLS-118hr796ih",
+            "lastModified": "2023-03-01T10:29:21Z",
+            "packageLink": "https://api.govinfo.gov/packages/BILLS-118hr796ih/summary",
+            "docClass": "hr",
+            "title": "Supply Chain Mapping and Monitoring Act",
+            "congress": "118",
+            "dateIssued": "2023-02-02"
+        }
+    ]
+}
