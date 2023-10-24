@@ -102,4 +102,3 @@ with open(os.path.join(dirname, "govinfo_response.json"), encoding="utf-8") as f
     govinfo_response = json.load(fp)
 with open(os.path.join(dirname, "govinfo_empty_response.json"), encoding="utf-8") as fp:
     govinfo_empty_response = json.load(fp)
-
