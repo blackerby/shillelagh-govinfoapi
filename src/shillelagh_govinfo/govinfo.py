@@ -100,7 +100,7 @@ class GovInfoAPI(Adapter):
         parsed = urllib.parse.urlparse(uri)
         query_string = urllib.parse.parse_qs(parsed.query)
 
-        # first part of path should be one of `collections`, `packages`, `published`, `related`
+        # first part of path should be one of `collections`, `packages`, `published`,`related` # noqa: E501
         # we ignore `search` TODO: explain why
         split_path = parsed.path.split("/")
         endpoint = split_path[1]

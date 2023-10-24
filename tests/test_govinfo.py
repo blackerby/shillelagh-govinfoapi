@@ -50,7 +50,7 @@ def test_supports(input, expected) -> None:
     assert GovInfoAPI.supports(input) == expected
 
 
-def test_govinfo_with_data(mocker, requests_mock):
+def test_govinfo_with_data(mocker: MockerFixture, requests_mock):
     """
     Run SQL against the adapter.
     """
