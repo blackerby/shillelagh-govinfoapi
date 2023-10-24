@@ -86,8 +86,8 @@ class FakeAdapter(Adapter):
     def insert_data(self, row: Row) -> int:
         row_id: Optional[int] = row["rowid"]
         if row_id is None:
-            max_rowid = max(row["rowid"] for row in self.data) if self.data else 0
-            row["rowid"] = row_id = max_rowid + 1
+            max_rowid = max(row["rowid"] for row in self.data) if self.data else 0  # type: ignore # noqa: E501
+            row["rowid"] = row_id = max_rowid + 1  # type: ignore # noqa: E501
 
         self.data.append(row)
 
