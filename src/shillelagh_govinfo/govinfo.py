@@ -240,6 +240,7 @@ class GovInfoAPI(Adapter):
         self,
         bounds: Dict[str, Filter],
         order: List[Tuple[str, RequestedOrder]],
+        **kwargs,
     ) -> Iterator[Row]:
         base_url = f"{self.url}/{self.endpoint}"
         if self.endpoint == "collections":
@@ -269,4 +270,3 @@ class GovInfoAPI(Adapter):
                 # returned. investigate why -- maybe sqlite3 docs on date type?
                 "date_issued": record["dateIssued"],
             }
-
