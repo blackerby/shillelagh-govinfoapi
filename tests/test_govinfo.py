@@ -56,7 +56,7 @@ def test_govinfo_with_data(mocker: MockerFixture, requests_mock):
     """
 
     mocker.patch(
-        "shillelagh_govinfo.govinfo.requests_cache.CachedSession",
+        "shillelagh_govinfoapi.govinfo.requests_cache.CachedSession",
         return_value=requests.Session(),
     )
 
@@ -85,7 +85,7 @@ def test_govinfo_with_data(mocker: MockerFixture, requests_mock):
 
 def test_govinfo_no_data(mocker, requests_mock):
     mocker.patch(
-        "shillelagh_govinfo.govinfo.requests_cache.CachedSession",
+        "shillelagh_govinfoapi.govinfo.requests_cache.CachedSession",
         return_value=requests.Session(),
     )
 
