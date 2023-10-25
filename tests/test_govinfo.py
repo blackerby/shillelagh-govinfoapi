@@ -7,7 +7,7 @@ import pytest
 from pytest_mock import MockerFixture
 import requests
 
-from shillelagh_govinfo.govinfo import GovInfoAPI
+from shillelagh_govinfoapi.govinfo import GovInfoAPI
 from shillelagh.backends.apsw.db import connect
 
 from .fakes import govinfo_empty_response, govinfo_response
